@@ -1,0 +1,26 @@
+private:
+  image: progrium/consul
+
+shell:
+  build: shell
+  links:
+    - private
+  #command: zsh
+
+# sync_pinboard:
+#   image: dionysus_db_pinboard
+# sync_evernote:
+#   image: dionysus_db_evernote
+# sync_personal_mail:
+#   image: dionysus_db_imap
+# sync_reddit:
+#   build: dionysus_db_mailing_lists
+# sync_mailing_lists:
+#   build: dionysus_db_mailing_lists
+# sync_slack:
+#   build: dionysus_db_slack
+# sync_asana:
+#   build: dionysus_db_imap
+
+# elasticsearch:
+#   image: elasticsearch
