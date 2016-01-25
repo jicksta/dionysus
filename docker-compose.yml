@@ -5,14 +5,25 @@ shell:
   build: shell
   links:
     - private
+  volumes_from:
+    - sync_pinboard
   #command: zsh
 
-# sync_pinboard:
-#   image: dionysus_db_pinboard
+# graph_indexer:
+  # build: dionysus-graph
+
+sync_pinboard:
+  build: dionysus-db-pinboard
+
 # sync_evernote:
 #   image: dionysus_db_evernote
 # sync_personal_mail:
 #   image: dionysus_db_imap
+# sync_pivotal_tracker_notifications:
+#   image: dionysus_db_pivotal_tracker
+# sync_github_notifications:
+#   image: dionysus_db_pivotal_tracker
+
 # sync_reddit:
 #   build: dionysus_db_mailing_lists
 # sync_mailing_lists:

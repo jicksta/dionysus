@@ -25,7 +25,7 @@ WORKDIR /home/demeter
 # RUN nvm install node && nvm use node
 
 
-ADD node-v5.4.1-linux-x64.tar.xz /usr/local/node
+#ADD node-v5.4.1-linux-x64.tar.xz /usr/local/node
 
 #RUN npm install -g bower webpack-dev-server webpack phantomjs
 #RUN npm install -g ember-cli@2.2.0-beta.6

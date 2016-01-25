@@ -1,0 +1,5 @@
+{
+  "node_name": "cloud",
+  "server": true,
+  "bind": "162.243.155.180"
+}
