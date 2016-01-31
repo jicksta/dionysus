@@ -9,31 +9,38 @@ shell:
     - sync_pinboard
   #command: zsh
 
-# graph_indexer:
-  # build: dionysus-graph
-
 sync_pinboard:
   build: dionysus-db-pinboard
 
+# graph_indexer:
+#   build: dionysus-graph
+#syncthing:
+#  build: syncthing
+
+
+# elasticsearch:
+#   image: elasticsearch
+
 # sync_evernote:
 #   image: dionysus_db_evernote
+# sync_rss_feeds
+#   image: dionysus_db_rss
 # sync_personal_mail:
 #   image: dionysus_db_imap
 # sync_youtube:
 #   image: dionysus_db_youtube
+# sync_pocket:
+#   image: dionysus_db_pocket
+# sync_reddit:
+#   build: dionysus_db_mailing_lists
+
 # sync_pivotal_tracker_notifications:
 #   image: dionysus_db_pivotal_tracker
 # sync_github_notifications:
 #   image: dionysus_db_pivotal_tracker
-
-# sync_reddit:
-#   build: dionysus_db_mailing_lists
-# sync_mailing_lists:
-#   build: dionysus_db_mailing_lists
 # sync_slack:
 #   build: dionysus_db_slack
 # sync_asana:
 #   build: dionysus_db_imap
-
-# elasticsearch:
-#   image: elasticsearch
+# sync_mailing_lists:
+#   build: dionysus_db_mailing_lists
