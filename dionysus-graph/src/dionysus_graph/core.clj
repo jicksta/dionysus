@@ -5,9 +5,14 @@
     [clojurewerkz.titanium.graph :as tg]
     [clojurewerkz.titanium.vertices :as tv]))
 
-(def pinboard-db (leveldb/open "/data/dionysus-db-pinboard"))
 
-(def main-graph (tg/open "/data/dionysus-graph"))
+(defn keyspace [db pattern]
+  (let [start-with (str/join "." (take-while pattern #(not= % '*)))
+        ]
+    (leveldb/iterator db scan-start)
+  ; (take-while
+    ; (fn [key value]
+      ; (= timestamp (timestamp-from-key key))
 
 ; Traverse all pinboard links and create vertices for the bookmarks with KVPs
 ; for the important properties, then create edges to tags
@@ -28,9 +33,7 @@
           timestamp (timestamp-from-key start-key)
           properties (sorted-map-by
                        (map simplify-kvp
-                            (take-while
-                              (fn [key value]
-                                (= timestamp (timestamp-from-key key))
+                            )
                               db-seq))]
       [timestamp properties]))
 

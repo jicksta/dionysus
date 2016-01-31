@@ -19,6 +19,8 @@ sync_pinboard:
 #   image: dionysus_db_evernote
 # sync_personal_mail:
 #   image: dionysus_db_imap
+# sync_youtube:
+#   image: dionysus_db_youtube
 # sync_pivotal_tracker_notifications:
 #   image: dionysus_db_pivotal_tracker
 # sync_github_notifications:
