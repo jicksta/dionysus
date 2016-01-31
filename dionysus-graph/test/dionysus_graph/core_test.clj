@@ -7,10 +7,11 @@
     (is (simplify-kvp [])))
 
 
-; Create a new levelDB database, write a key, then read it back.
 
 (def tmpdir "tmp/test.leveldb")
 
-(deftest simplify-kvp
-  (testing "Simplifies a bookmark key-value pair"
+; Create a new levelDB database, write a key, then read it back.
+
+(deftest db-integration
+  (testing "can open a db, write a value and read a value"
     (let [db (open-keyspace tmpdir)])))
